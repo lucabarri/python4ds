@@ -33,3 +33,7 @@ Prior to this course, [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van
 | 08/12     |<ul><li> 2D Plotting (1h) </li><li> 3D plotting (1h)</li> <li> Practical Session 16 (2h)</li> </ul>|
 | 15/12     |<ul><li>Advanced Plotting (2h)</li><li>Practical Session 17 (2h)</li></ul>|
 | 12/01     |Final Exam|
+
+## References
+
+This course roughly follows the book by [Eric Mathhes: Python Crash Course](https://ehmatthes.github.io/pcc/).
