@@ -15,7 +15,7 @@ Based on you last program, write a program that accepts a person's name as an in
 
 ## Problem 2
 
-### Problem 1.1
+### Problem 2.1
 
 Google up a quotation you like. Write a program that prints the quotation from an author in the following template,
 
@@ -23,15 +23,15 @@ Google up a quotation you like. Write a program that prints the quotation from a
 
 In this case, the author is "Albert Camus", and the quotation is "One must imagine Sisyphus happy".
 
-### Problem 1.2
+### Problem 2.2
 
 Repeat the previous exercise, while storing your author of choice in an variable called ```author```, and the quotation in a variable called ```quote```.
 
-### Problem 1.3
+### Problem 2.3
 
 Repeat the previous exercise, while receiving the author and quotation from an user.
 
-### Problem 1.4
+### Problem 2.4
 
 Repeat the previous exercise. After you receive the author and quotation, you should write the quotation into a file named "author.txt"
 
