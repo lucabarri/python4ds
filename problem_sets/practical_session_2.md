@@ -41,7 +41,7 @@ List of iterates: [12, 6, 3, 10, 5, 16, 8, 4, 2, 1]
 Number of steps: 9
 ```
 
-# Problem 3
+# Problem 4
 
 In a talk show, the host wants to give a gift to one person from the audience. The program's director comes up with the following strategy:
 
@@ -52,7 +52,7 @@ In a talk show, the host wants to give a gift to one person from the audience. T
 
 Given $n$ and $k$, write a program that prints the gifted person from the audience.
 
-# Problem 4
+# Problem 5
 
 Write a program that,
 
