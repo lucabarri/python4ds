@@ -2,23 +2,34 @@
 
 ## Problem 1
 
+Write a program that receives a dictionary with floating point values (arbitrary keys) and returns a new dictionary with keys sorted by values.
+
+__Example.__
+
+```
+Input: {'Person1': 22, 'Person2': 35, 'Person3': 5, 'Person4': 53}
+Output: {'Person3': 5, 'Person1': 22, 'Person2': 35, 'Person4': 53}
+```
+
+## Problem 2
+
 The factorial of a non-negative integer $n$, denoted by $n!$, is defined as,
 
 $n! = n \times (n-1) \times \cdots \times 2 \times 1$
 
 Henceforth let $f(n) = n!$
 
-### Problem 1.1
+### Problem 2.1
 
 From the definition of factorial, derive an expression of $f(n)$ in terms of $f(n-1)$.
 
-### Problem 1.2
+### Problem 2.2
 
 From the recursive definition in Step 1, program a function $f(n)$ that returns $n!$.
 
-## Problem 2
+## Problem 3
 
-### Problem 2.1
+### Problem 3.1
 
 The Fibonacci sequence is defined as follows,
 
@@ -28,21 +39,21 @@ $$f(n) = f(n-1) + f(n-2)$$
 
 write a recursive program that computes $f(n)$.
 
-### Problem 2.2
+### Problem 3.2
 
 Based on your last program, write a recursive program that stores $f(i)$ on a list, for $i=1,\cdots,n$.
 
-## Problem 3
+## Problem 4
 
-### Problem 3.1
+### Problem 4.1
 
 Write a sequential program that converts a decimal number into binary.
 
-### Problem 3.2
+### Problem 4.2
 
 Rewrite your program using a recursive function.
 
-## Problem 4
+## Problem 5
 
 Assume that $x$ is a monotonically non-decreasing array, i.e., $x_{0} \leq x_{2} \leq \cdots \leq x_{n-1}$. Implement an algorithm that receives a searched value $x_{0}$. The algorithm follows the steps,
 
@@ -53,27 +64,27 @@ Assume that $x$ is a monotonically non-decreasing array, i.e., $x_{0} \leq x_{2}
     2. ELSE then searches the sub-array $x_{0},\cdots,x_{m-1}$
 4. Repeat untill found or all search space is exausted.
 
-### Problem 4.1.
+### Problem 5.1.
 
 Provide a sequential implementation of this algorithm.
 
-### Problem 4.2.
+### Problem 5.2.
 
 Provide a recursive implementation of this algorithm.
 
 __Hint.__ In the recursive version of the algorithm, the function should receive the left and right extremities of the search space
 
-### Problem 4.3
+### Problem 5.3
 
 What is the [algorithmic complexity](https://en.wikipedia.org/wiki/Computational_complexity_theory) for finding an element with binary search?
 
 # Classes
 
-## Problem 5
+## Problem 6
 
 In this problem, we are going to cover binary search tree. Follow the next steps,
 
-### Problem 5.1
+### Problem 6.1
 
 Code a class ```Node``` with the following specification,
 
@@ -100,7 +111,7 @@ Objects of the class ```Node``` have the following methods,
 In ```insert_children(other_node)```, you insert a new object of the class ```other_node``` in ```left``` or ```right```.
 
 
-### Problem 5.2
+### Problem 6.2
 
 Write a class ```Tree``` with the following specification. Henceforth we refer to a generic object from ```Tree``` as ```tree```
 
@@ -151,7 +162,7 @@ __Hint.__ Think recursively.
 
 Searches for the node such that ```node.value = x```
 
-### Problem 5.3
+### Problem 6.3
 
 - What is the computational complexity of inserting an element to a binary search tree?
 - What is the computational complexity of searching for an element in a binary search tree?
