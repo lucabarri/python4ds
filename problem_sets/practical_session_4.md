@@ -16,6 +16,8 @@ implementing the following magic functions,
 - ```__sub__(self, other)```: If other is a Vector, subtracts two vectors in a coordinate-wise fashion. If it is a scalar, subtracts the scalar to each coordinate. Otherwise, raises a ValueError.
 - ```__mul__(self, other)```: If other is a Vector, performs an inner product. If other is a scalar, multiply each coordinate by it. Otherwise, raise a ValueError.
 
+__Hint.__ use __math__ for calculating square-roots.
+
 Test the behavior of you class as you wish.
 
 # Problem 2
