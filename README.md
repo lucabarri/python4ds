@@ -21,15 +21,14 @@ Prior to this course, [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van
 | 06/09     | <ul><li>Introduction to Python \& Data Science (30min)</li><li>Syntax, Variables and I/O (2h)</li><li>If/Else (30min)</li><li>Practical Session 1 (1h) [[Problem Set]](https://github.com/eddardd/python4ds/blob/main/problem_sets/practical_session_1.md) </li></ul>  | <ul><li>[How to learn Python programming](https://www.youtube.com/watch?v=F2Mx-u7auUs) (7min)</li><li>[Identation](https://www.youtube.com/watch?v=GQf25_9NOts) (11min)</li></ul> |
 | 08/09     | <ul><li>Data Structures (2h)</li><li>For Loops (2h)</li><li>Practical Session 2 (2h) [[Problem Set]](https://github.com/eddardd/python4ds/blob/main/problem_sets/practical_session_2.md) [[Solutions]](https://github.com/eddardd/python4ds/tree/main/solutions/session_2)</li></ul>|<ul><li>[Python's type system explained: Static vs dynamic typing](https://www.youtube.com/watch?v=kSXZHRsWXfU) (27min)</li></ul>|
 | 15/09     | <ul><li>Functions (1h)</li><li>Object Orientation (1h)</li><li>Practical Session 3 (2h) [[Problem Set]](https://github.com/eddardd/python4ds/blob/main/problem_sets/practical_session_3.md) </li></ul>|
-| 22/09     |<ul><li>Functions and Classes (Advanced) (1h)</li><li>Packaging (1h)</li><li>Practical Session 4 (2h) [[Problem Set]](https://github.com/eddardd/python4ds/blob/main/problem_sets/practical_session_4.md)</li></ul>|<ul><li>[Installing Anaconda on Windows](https://docs.anaconda.com/free/anaconda/install/windows/)</li><li>[Installing Anaconda on Ubuntu](https://docs.anaconda.com/free/anaconda/install/linux/)</li><li>[Download Anaconda](https://www.anaconda.com/download)</li></ul>|
+| 22/09     |<ul><li>Functions and Classes (Advanced) (2h)</li><li>Practical Session 4 (2h) [[Problem Set]](https://github.com/eddardd/python4ds/blob/main/problem_sets/practical_session_4.md)</li></ul>||
 | 29/09     |No class|
+| 06/10     |<ul><li>Packaging (1h)</li><li>Introduction to NumPy (1h)</li><li>Practical Session 5 (2h)</li></ul>|<ul><li>[Installing Anaconda on Windows](https://docs.anaconda.com/free/anaconda/install/windows/)</li><li>[Installing Anaconda on Ubuntu](https://docs.anaconda.com/free/anaconda/install/linux/)</li><li>[Download Anaconda](https://www.anaconda.com/download)</li><li>Check out the reading list!</li></ul>|
 
 __Note.__ From this date further the planning is somewhat preliminar and prone to change.
 
 | Day/Month | Subject |Additional Content   |
 |-----------|---------|---------------------|
-| 06/10     |<ul><li>Practical Session 7 (2h)</li><li>Packaging (2h)</li></ul>|
-| 13/10     |<ul><li>Introduction to NumPy (1h)</li><li>Operations w/ np.arrays (1h)</li><li>Practical Session 5 (2h)</li></ul>|
 | 20/10     |<ul><li>Indexing and Slicing (1h)</li><li>Vectorization \& Broadcasting (1h)</li><li>Practical Session 8 (2h)</li></ul>|
 | 27/10     |<ul><li> Statistics (2h) </li><li>Practical Session 9: Linear Regression (2h)</li></ul>|
 | 10/11     |<ul><li> Linear Algebra (2h)</li><li>Practical Session 10: Image Filtering (2h)</li></ul>|
@@ -40,6 +39,9 @@ __Note.__ From this date further the planning is somewhat preliminar and prone t
 | 15/12     |<ul><li>Advanced Plotting (2h)</li><li>Practical Session 17 (2h)</li></ul>|
 | 12/01     |Final Exam|
 
-## References
+## Reading List
 
-This course roughly follows the book by [Eric Mathhes: Python Crash Course](https://ehmatthes.github.io/pcc/).
+- This course roughly follows the book by [Eric Mathhes: Python Crash Course](https://ehmatthes.github.io/pcc/).
+- On NumPy, some open source books are quite good. From now on, I will be following these.
+    - [From Python to NumPy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)
+    - [Scientific Python Lectures](https://lectures.scientific-python.org/)
