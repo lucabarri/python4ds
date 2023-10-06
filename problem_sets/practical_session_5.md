@@ -12,13 +12,15 @@ __Note.__ Look up online, or in the lecture, which NumPy function generates rand
 
 Given a vector $\mathbf{x} \in \mathbb{R}^{n_{c}}$, it can be __transformed__ into a vector of __probabilities__ through the [__softmax__ function](https://en.wikipedia.org/wiki/Softmax_function),
 
-$$\text{softmax}(\mathbf{x})_{i} = \frac{e^{x_{i}}}{\sum_{j=1}^{n_{c}}e^{x_{j}}}$$
+$$\text{softmax}(\mathbf{x})_{i} = \frac{e^{ x\_{i} }}{\sum e^{ x\_{j} }}$$
+
+
 
 __Code.__ Implement a function that, given $\mathbf{x}$, outputs $\text{softmax}(\mathbf{x})$.
 
 ### Step 3: Entropy
 
-For a vector $\mathbf{p} \in \mathbb{R}_{+}^{n_{c}}$ s.t. $\sum_{i=1}^{n_{c}}p_{i}=1$, the entropy of $\mathbf{p}$ is,
+For a vector $\mathbf{p} \in \mathbb{R}\_{+}^{n\_{c}}$ s.t. $\sum p_{i}=1$, the entropy of $\mathbf{p}$ is,
 
 $$H(\mathbf{p}) = -\sum_{i=1}^{n_{c}}p_{i}\log p_{i}$$
 
@@ -42,7 +44,7 @@ Let's say you have 2 sets of points in a $d-$dimensional Euclidean space. These 
 
 Compute the matrix of pairwise Euclidean distances between them,
 
-$$D_{ij} = \lVert \mathbf{x}_{i} - \mathbf{y}_{j} \rVert_{2}$$
+$$D_{ij} = || \mathbf{x}\_{i} - \mathbf{y}\_{j} ||\_{2}$$
 
 Do so with a standard for loop (i.e. loop through all $i$ and $j$.)
 
@@ -52,7 +54,7 @@ __Note.__ You should store these in the entries of a matrix of shape $(n,m)$.
 
 Based on,
 
-$$D_{ij}^{2} = \lVert \mathbf{x}_{i} \rVert_{2}^{2} + \lVert \mathbf{y}_{j} \rVert_{2}^{2} - 2 \langle \mathbf{x}_{i},\mathbf{y}_{j} \rangle$$
+$$D_{ij}^{2} = || \mathbf{x}\_{i} ||\_{2}^{2} + || \mathbf{y}\_{j} ||\_{2}^{2} - 2 \mathbf{x}\_{i}^{T}\mathbf{y}\_{j} $$
 
 Calculate $\mathbf{D} \in \mathbb{R}^{n \times m}$ through __broadcasting__.
 
@@ -60,7 +62,7 @@ Calculate $\mathbf{D} \in \mathbb{R}^{n \times m}$ through __broadcasting__.
 
 Given the same matrices $\mathbf{X} \in \mathbb{R}^{n\times d}$ and $\mathbf{Y} \in \mathbb{R}^{m\times d}$, compute the similarity matrix $\mathbf{S} \in \mathbb{R}^{n \times m}$ defined as,
 
-$$S_{ij} = \text{cossim}(\mathbf{x}_{i},\mathbf{y}_{j}) = \frac{\langle \mathbf{x}_{i}, \mathbf{y}_{j} \rangle}{\lVert \mathbf{x}_{i} \rVert_{2}\cdot \lVert \mathbf{y}_{j} \rVert_{2}}$$
+$$S_{ij} = \text{cossim}(\mathbf{x}\_{i},\mathbf{y}\_{j}) = \frac{ \mathbf{x}\_{i}^{T} \mathbf{y}\_{j} }{|| \mathbf{x}\_{i} ||\_{2} \cdot || \mathbf{y}\_{j} ||\_{2}}$$
 
 #### Naïve Approach
 
@@ -92,7 +94,7 @@ $$u_{i,j}^{(k+1)} = u_{i,j}^{(k)} + \gamma(u_{i+1,j}^{(k)} + u_{i-1,j}^{(k)} + u
 
 where $\gamma = \alpha\frac{\delta t}{\delta x^{2}}$
 
-__Image Interpretation.__ $\mathbf{u}$ is going to be a 3D array, of shape $(n_{iter}, h, w)$, where $h$ denotes the height of the image ($\#$ of rows), and $w$ denotes the width of the image ($\#$ of columns). The diffusion process sets $u^{(0)}_{ij}$ as the initial conditions, then iterates the heat equation for $n_{iter} - 1$ steps filling the array. Note that under this interpretation, the spatial variables are the pixel positions $(i, j)$, whereas the time variable is the diffusion step $k$.
+__Image Interpretation.__ $\mathbf{u}$ is going to be a 3D array, of shape $(n\_{iter}, h, w)$, where $h$ denotes the height of the image (number of rows), and $w$ denotes the width of the image (number of columns). The diffusion process sets $u^{(0)}\_{ij}$ as the initial conditions, then iterates the heat equation for $n\_{iter} - 1$ steps filling the array. Note that under this interpretation, the spatial variables are the pixel positions $(i, j)$, whereas the time variable is the diffusion step $k$.
 
 __Note.__ From Von Neumann's analysis, these iterations are stable for $\gamma \leq 0.5$. Since here we are interested on how the Heat Equation affects images, and not really about the physics of the problem, we are going to ignore $\delta t$ and $\delta x$, and set $\gamma := 0.25$.
 
@@ -102,8 +104,8 @@ Each image consists of a matrix $(n, n)$, where $n = 256$.
 
 As initial conditions for the problem, we assume the following case:
 
-- let $\mathbf{c}_{0} = (170, 170)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $\lVert \mathbf{x}_{0} - \mathbf{x} \rVert_{2} \leq 20$
-- let $\mathbf{c}_{1} = (85, 85)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $\lVert \mathbf{c}_{1} - \mathbf{x} \rVert_{2} \leq 30$
+- let $\mathbf{c}\_{0} = (170, 170)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $|| \mathbf{x}_{0} - \mathbf{x} ||\_{2} \leq 20$
+- let $\mathbf{c}\_{1} = (85, 85)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $|| \mathbf{c}_{1} - \mathbf{x} ||\_{2} \leq 30$
 
 This should generate two circles on the image. For plotting, use the following script,
 
