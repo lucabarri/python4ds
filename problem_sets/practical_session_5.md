@@ -104,7 +104,7 @@ Each image consists of a matrix $(n, n)$, where $n = 256$.
 
 As initial conditions for the problem, we assume the following case:
 
-- let $\mathbf{c}\_{0} = (170, 170)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $|| \mathbf{x}_{0} - \mathbf{x} ||\_{2} \leq 20$
+- let $\mathbf{c}\_{0} = (170, 170)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $|| \mathbf{c}_{0} - \mathbf{x} ||\_{2} \leq 20$
 - let $\mathbf{c}\_{1} = (85, 85)$. $u_{ij}^{(0)} = 1$ for all $\mathbf{x} = (i,j)$ s.t. $|| \mathbf{c}_{1} - \mathbf{x} ||\_{2} \leq 30$
 
 This should generate two circles on the image. For plotting, use the following script,
