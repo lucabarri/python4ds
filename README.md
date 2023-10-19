@@ -31,7 +31,7 @@ __Note.__ From this date further the planning is somewhat preliminar and prone t
 |-----------|---------|---------------------|
 | 27/10     |<ul><li> Natural Language Processing (2h) </li><li>Practical Session 7 (2h)</li></ul>|
 | 10/11     |<ul><li> Audio Processing (2h)</li><li>Practical Session 8 (2h)</li></ul>|
-| 17/11     | <ul> <li> Mid Term (2h) </li> <li> Project Planning (2h) </li>  </ul> |
+| 17/11     | <ul> <li> Mid Term (2h) __provisory!!!__ </li> <li> Project Planning (2h) </li>  </ul> |
 | 24/11     | <ul> <li> Graph Data (2h) </li> <li> Practical Session 9 (2h) </li>  </ul> |
 | 01/12     | <ul> <li> Practical Session 13: Nearest Neighbors Classifier (2h) </li> <li> Practical Session 14: Naive Bayes Classifier (2h) </li>  </ul> |<ul><li>[Why Python is popular for Machine Learning?](https://www.youtube.com/watch?v=kSXZHRsWXfU) (10min)</li></ul>|
 | 01/12     ||
