@@ -21,15 +21,15 @@ here, all functions take as input ```im```, which represent the input image $\ma
 
 Additive White Gaussian Noise (AWGN) is the simplest kind of noise. It consists on sampling $\epsilon_{ij} \sim \mathcal{N}(0, \sigma)$, then,
 
-$$\tilde{f}_{ij} = f_{ij} + \epsilon_{ij}$$
+$$\tilde{f}\_{ij} = f\_{ij} + \epsilon\_{ij}$$
 
 ### 1.3 Salt and Pepper Noise
 
 Salt and Pepper noise represents sudden changes in the signal, such as defective pixels. The idea is the following: given a probability $p$, and for each pixel $(i, j)$,
 
 $$
-\tilde{f}_{ij} = \begin{cases}
-f_{ij}&\text{ with prob. } 1-p\\
+\tilde{f}\_{ij} = \begin{cases}
+f\_{ij}&\text{ with prob. } 1-p\\
 1 & \text{ with prob. } p/2\\
 0 & \text{ with prob. } p/2
 \end{cases}
@@ -62,13 +62,13 @@ $$\text{PSNR}(\mathbf{f},\tilde{\mathbf{f}})=10\log_{10}\biggr(\frac{1}{MSE(\mat
 
 Linear filters are based on the convolution operation. As we saw in today's lecture, the Heat kernel, through the Laplacian filter, is a filter that acts on the image's spatial domain (i.e., image pixels). This translates to the frequency domain through the Fourier transform. The two things are linked through the [__convolution theorem__](https://en.wikipedia.org/wiki/Convolution_theorem), which roughly states that,
 
-$$\mathcal{F}\{f \star g \} = FG$$
+$$\mathcal{F}(f \star g) = FG$$
 
-where $F = \mathcal{F}\{f\}$ (resp. $G$) is the Fourier transform of the image $f$ (resp. $g$).
+where $F = \mathcal{F}(f)$ (resp. $G$) is the Fourier transform of the image $f$ (resp. $g$).
 
 ### 3.1. Convolution
 
-Let $f$ and $g$ be two images, and $F$ and $G$ their respective Fourier transforms. Implement a function ```frequency_convolve(F, G)``` which returns $\mathcal{F}^{-1}\{FG\}$.
+Let $f$ and $g$ be two images, and $F$ and $G$ their respective Fourier transforms. Implement a function ```frequency_convolve(F, G)``` which returns $\mathcal{F}^{-1}(FG)$.
 
 ### 3.2. Gaussian Filtering
 
