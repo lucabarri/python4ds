@@ -78,7 +78,9 @@ $$G(x, y) = \frac{1}{Z}\text{exp}\biggr(\frac{x^{2}+y^{2}}{2\sigma^{2}}\biggr)$$
 
 for $Z = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}G(x, y)dxdy$.
 
-__Hint.__ Let $h, w$ be given. You will compute the __unormalized__ kernel $\tilde{G}(i,j)=ZG(i,j)$, $i=0,\cdots,h-1$ and $w=0,\cdots,1$. Aftewards, you compute $Z$ by summing over the rows and columns of $\tilde{G}(i,j)$.
+__Hint 1.__ Let $h, w$ be given. You will compute the __unormalized__ kernel $\tilde{G}(i,j)=ZG(i,j)$, $i=0,\cdots,h-1$ and $w=0,\cdots,1$. Aftewards, you compute $Z$ by summing over the rows and columns of $\tilde{G}(i,j)$.
+
+__Hint 2.__ You will implement $G(x, y)$ over an uniform and __symmetric__ grid. This means that, instead of using ```np.meshgrid(x, y)``` over ```x = np.arange(h)```, you will define $x$ over $\{-h/2,\cdots,h/2\}$. Make sure $h / 2$ is rounded and casted to an integer. The definition of $y$ is analogous to $x$ (with $w$ in place of $h$).
 
 ### 3.3. Choosing $\sigma$
 
