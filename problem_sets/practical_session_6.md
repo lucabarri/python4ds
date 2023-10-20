@@ -80,15 +80,17 @@ Let $f$ and $g$ be two images, and $F$ and $G$ their respective Fourier transfor
 
 Implement a Gaussian filter, which is defined as,
 
-$$g(x, y) = \frac{1}{Z}\text{exp}\biggr(\frac{x^{2}+y^{2}}{2\sigma^{2}}\biggr)$$,
+$$g(x, y) = \frac{1}{Z}\text{exp}\biggr(-\frac{x^{2}+y^{2}}{2\sigma^{2}}\biggr)$$,
 
 for $Z = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g(x, y)dxdy$.
 
 __Note 4.__ $g$ is defined in spatial coordinates. Compute $G$, the FFT of $g$.
 
-__Hint 1.__ Let $h, w$ be given. You will compute the __unormalized__ kernel $\tilde{g}(i,j)=ZG(i,j)$, $i=0,\cdots,h-1$ and $w=0,\cdots,1$. Aftewards, you compute $Z$ by summing over the rows and columns of $\tilde{g}(i,j)$.
+__Hint 1.__ Let $h, w$ be given. You will compute the __unormalized__ kernel $\tilde{g}(i,j)=Zg(i,j)$, $i=0,\cdots,h-1$ and $w=0,\cdots,1$. Aftewards, you compute $Z$ by summing over the rows and columns of $\tilde{g}(i,j)$.
 
 __Hint 2.__ You will implement $g(x, y)$ over an uniform and __symmetric__ grid. This means that, instead of using ```np.meshgrid(x, y)``` over ```x = np.arange(h)```, you will define $x$ over $\{-h/2,\cdots,h/2\}$. Make sure $h / 2$ is rounded and casted to an integer. The definition of $y$ is analogous to $x$ (with $w$ in place of $h$).
+
+__Note 5.__ Depending on how you defined your grid, you might need an additional ```np.fft.ifftshift```!
 
 ### 3.3. Choosing $\sigma$
 
