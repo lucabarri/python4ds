@@ -25,17 +25,16 @@ This is a _hands-on_ course. In this sense, you are expected to learn from pract
 | 13/10     |Introduction to Matplotlib & Pandas (4h)|
 | 20/10     |<ul><li>Image Processing (2h)</li><li>Practical Session 6 (2h)</li></ul>|[The Remarkable Story Behind The Most Important Algorithm Of All Time](https://www.youtube.com/watch?v=nmgFG7PUHfo)|
 | 27/10     |<ul><li> Natural Language Processing (2h) </li><li>Practical Session 7 (2h)</li></ul>|<ul><li>[Noam Chomsky - The Ghost in the Machine](https://www.youtube.com/watch?v=axuGfh4UR9Q)</li></ul>|
+| 10/11     |<ul><li> Audio Processing (2h)</li><li>Practical Session 8 (2h)</li></ul>|
+| 17/11     | <ul> <li> Mid Term (2h) __provisory!!!__ </li> <li> Project Planning (2h) </li>  </ul> |
+| 24/11     | <ul> <li> Graph Data (2h) </li> <li> Practical Session 9 (2h) </li>  </ul> |
 
 __Note.__ From this date further the planning is somewhat preliminar and prone to change.
 
 | Day/Month | Subject |Additional Content   |
 |-----------|---------|---------------------|
-| 10/11     |<ul><li> Audio Processing (2h)</li><li>Practical Session 8 (2h)</li></ul>|
-| 17/11     | <ul> <li> Mid Term (2h) __provisory!!!__ </li> <li> Project Planning (2h) </li>  </ul> |
-| 24/11     | <ul> <li> Graph Data (2h) </li> <li> Practical Session 9 (2h) </li>  </ul> |
-| 01/12     | <ul> <li> Practical Session 13: Nearest Neighbors Classifier (2h) </li> <li> Practical Session 14: Naive Bayes Classifier (2h) </li>  </ul> |<ul><li>[Why Python is popular for Machine Learning?](https://www.youtube.com/watch?v=kSXZHRsWXfU) (10min)</li></ul>|
-| 01/12     ||
-| 08/12     ||
+| 01/12     | <ul> <li> Exploratory Data Analysis (2h) </li> </ul> |
+| 08/12     | <ul> <li> Practical Session 10: Nearest Neighbors Classifier (2h) </li> <li> Practical Session 11: Naive Bayes Classifier (2h) </li>  </ul> |<ul><li>[Why Python is popular for Machine Learning?](https://www.youtube.com/watch?v=kSXZHRsWXfU) (10min)</li></ul>|
 | 15/12     ||
 | 12/01     ||
 
